@@ -1,0 +1,13 @@
+<mat-accordion multi="true" *ngIf="posts.length > 0">
+  <mat-expansion-panel *ngFor="let post of posts">
+    <mat-expansion-panel-header>
+     {{post.title}}
+    </mat-expansion-panel-header>
+    <p>{{post.Content}}</p>
+  </mat-expansion-panel>
+</mat-accordion>
+<p *ngIf="posts.length <= 0">No content added ! </p>
+
+<p title="click here"><a href="https://www.w3schools.com/html/html_attributes.asp"> this is link </a></p>
+<p style class="color:red"> hello </p>
+<p title="click here"> there is a hidden paragraph</p>
